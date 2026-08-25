@@ -120,6 +120,7 @@
     .nav-btn:hover {
       color: white !important;
       background: var(--blue);
+      transform: scale(1.05);
     }
 
     .menu-btn {
@@ -208,7 +209,7 @@
 
     .btn-primary:hover {
       background: var(--blue);
-      transform: translateY(-2px);
+      transform: translateX(5px);
     }
 
     .btn-secondary {
@@ -218,6 +219,7 @@
     }
 
     .btn-secondary:hover {
+      transform: scale(1.05);
       border-color: var(--blue);
       color: var(--blue);
     }
