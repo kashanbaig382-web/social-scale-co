@@ -70,6 +70,11 @@ nav {
   letter-spacing: -0.5px;
 }
 
+.logo:hover {
+  transition: 0.50s ease;
+  color: var(--blue);
+}
+
 .logo-mark {
   width: 38px;
   height: 38px;
@@ -385,7 +390,7 @@ h2 {
 .service:hover {
   transform: translateY(-7px);
   border-color: #c9d6f5;
-  box-shadow: 0 20px 50px rgba(7, 21, 45, .07);
+  box-shadow: 0 20px 50px rgba(0, 94, 255, 0.164);
 }
 
 .service-number {
@@ -396,7 +401,7 @@ h2 {
 
 .service h3 {
   font-family: "Manrope", sans-serif;
-  margin: 55px 0 10px;
+  margin: 35px 0 10px;
   font-size: 21px;
 }
 
@@ -427,6 +432,7 @@ h2 {
   padding: 28px;
   border-radius: var(--radius);
   background: rgba(255, 255, 255, .04);
+  transition: .25s ease;
 }
 
 .process-card span {
@@ -442,6 +448,11 @@ h2 {
 .process-card p {
   color: #aab5c8;
   font-size: 14px;
+}
+.process-card:hover {
+  transform: translateY(-7px);
+  border-color: #c9d6f5;
+  box-shadow: 0 20px 50px rgba(0, 94, 255, 0.164);
 }
 
 /* WORK */
@@ -521,6 +532,7 @@ h2 {
   gap: 17px;
 }
 
+
 .price-card {
   background: white;
   border: 1px solid #dfe5ef;
@@ -528,6 +540,7 @@ h2 {
   padding: 30px;
   position: relative;
 }
+
 
 .price-card.featured {
   background: var(--dark);
@@ -672,6 +685,10 @@ footer ul {
   color: #9da9bc;
   font-size: 14px;
 }
+footer ul li :hover{
+  transition: 0.5s ease;
+  color: var(--blue);
+}
 
 .copyright {
   border-top: 1px solid rgba(255, 255, 255, .1);
@@ -696,11 +713,15 @@ footer ul {
   place-items: center;
   font-size: 27px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, .18);
+  transition: 0.50s ease;
 }
 
 .whatsapp:hover {
   transform: scale(1.08);
+  border-color: #c9d6f5;
+  box-shadow: 0 20px 80px rgba(0, 255, 42, 0.463);
 }
+
 
 /* RESPONSIVE */
 
