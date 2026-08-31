@@ -410,6 +410,20 @@ h2 {
   font-size: 14px;
 }
 
+.service-link {
+  display: inline-block;
+  margin-top: 18px;
+  color: var(--blue);
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.service-link:hover {
+  transform: translateX(5px);
+}
+
 /* PROCESS */
 
 .process {
@@ -449,6 +463,7 @@ h2 {
   color: #aab5c8;
   font-size: 14px;
 }
+
 .process-card:hover {
   transform: translateY(-7px);
   border-color: #c9d6f5;
@@ -685,7 +700,8 @@ footer ul {
   color: #9da9bc;
   font-size: 14px;
 }
-footer ul li :hover{
+
+footer ul li :hover {
   transition: 0.5s ease;
   color: var(--blue);
 }
@@ -812,6 +828,7 @@ footer ul li :hover{
     gap: 30px;
   }
 }
+
 /* ===== HERO LOAD ANIMATION ===== */
 
 .hero-content {
@@ -845,6 +862,7 @@ footer ul li :hover{
     transform: translateX(0);
   }
 }
+
 /* ===== DASHBOARD FLOATING ANIMATION ===== */
 
 .stat {
@@ -868,6 +886,7 @@ footer ul li :hover{
 }
 
 @keyframes statFloat {
+
   0%,
   100% {
     transform: translateY(0);
@@ -879,6 +898,7 @@ footer ul li :hover{
 }
 
 @keyframes chartPulse {
+
   0%,
   100% {
     opacity: 0.75;
@@ -888,6 +908,7 @@ footer ul li :hover{
     opacity: 1;
   }
 }
+
 /* =========================
    BUTTON ANIMATION
 ========================= */
@@ -910,6 +931,7 @@ footer ul li :hover{
 .btn-secondary:hover {
   box-shadow: 0 10px 25px rgba(7, 27, 66, 0.08);
 }
+
 /* =========================
    EYEBROW ANIMATION
 ========================= */
@@ -919,6 +941,7 @@ footer ul li :hover{
 }
 
 @keyframes eyebrowFloat {
+
   0%,
   100% {
     transform: translateY(0);
@@ -934,6 +957,7 @@ footer ul li :hover{
 }
 
 @keyframes dotPulse {
+
   0%,
   100% {
     transform: scale(1);
@@ -945,6 +969,7 @@ footer ul li :hover{
     opacity: 0.6;
   }
 }
+
 /* =========================
    DASHBOARD FLOAT
 ========================= */
@@ -954,6 +979,7 @@ footer ul li :hover{
 }
 
 @keyframes dashboardFloat {
+
   0%,
   100% {
     transform: translateY(0);
@@ -963,6 +989,7 @@ footer ul li :hover{
     transform: translateY(-7px);
   }
 }
+
 /* =========================
    LIVE PILL
 ========================= */
@@ -972,6 +999,7 @@ footer ul li :hover{
 }
 
 @keyframes livePulse {
+
   0%,
   100% {
     opacity: 1;
@@ -981,6 +1009,7 @@ footer ul li :hover{
     opacity: 0.65;
   }
 }
+
 /* =========================
    CHART ANIMATION
 ========================= */
@@ -988,7 +1017,7 @@ footer ul li :hover{
 .chart-line {
   transform-origin: left center;
   animation: chartGrow 2s ease-out forwards,
-             chartGlow 3s ease-in-out 2s infinite;
+    chartGlow 3s ease-in-out 2s infinite;
 }
 
 @keyframes chartGrow {
@@ -1004,6 +1033,7 @@ footer ul li :hover{
 }
 
 @keyframes chartGlow {
+
   0%,
   100% {
     opacity: 0.8;
@@ -1013,6 +1043,7 @@ footer ul li :hover{
     opacity: 1;
   }
 }
+
 /* =========================
    ACCESSIBILITY
 ========================= */
@@ -1027,4 +1058,63 @@ footer ul li :hover{
     transition-duration: 0.01ms !important;
   }
 
+}
+.seo-hero {
+    padding: 110px 0 70px;
+}
+
+.seo-hero h1 {
+    max-width: 900px;
+    margin-bottom: 22px;
+}
+
+.seo-hero p {
+    max-width: 850px;
+    line-height: 1.7;
+}
+
+.seo-section {
+    padding: 70px 0;
+}
+
+.seo-section h2 {
+    margin-bottom: 20px;
+}
+
+.seo-section p {
+    max-width: 900px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.seo-services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.seo-card {
+    padding: 28px;
+    border: 1px solid #dbe3f4;
+    border-radius: 18px;
+    background: #fff;
+}
+
+.seo-card h3 {
+    margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+    .seo-hero {
+        padding: 80px 0 50px;
+    }
+
+    .seo-services {
+        grid-template-columns: 1fr;
+    }
+
+    .seo-section {
+        padding: 50px 0;
+    }
 }
