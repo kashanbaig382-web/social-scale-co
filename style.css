@@ -526,7 +526,7 @@ h2 {
   max-width: 320px;
 }
 
-.work-card > p {
+.work-card>p {
   color: var(--muted);
   margin-top: 9px;
   max-width: 390px;
@@ -584,8 +584,8 @@ h2 {
 .strategy-row span {
   height: 37px;
   border-radius: 9px;
-  border: 1px solid rgba(255,255,255,0.09);
-  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .strategy-row span.active {
@@ -602,7 +602,7 @@ h2 {
 .strategy-tags small {
   padding: 6px 8px;
   border-radius: 100px;
-  background: rgba(255,255,255,0.07);
+  background: rgba(255, 255, 255, 0.07);
   font-size: 8px;
 }
 
@@ -768,7 +768,7 @@ h2 {
 .growth-message {
   margin-top: 25px;
   padding-top: 18px;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .growth-message small {
@@ -820,6 +820,7 @@ h2 {
     gap: 4px;
   }
 }
+
 /* PRICING */
 
 .pricing {
@@ -904,6 +905,21 @@ h2 {
   color: var(--blue);
   font-weight: 900;
   margin-right: 9px;
+}
+
+.selected-package {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 100px;
+  font-size: 13px;
+  color: #dbe6ff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.selected-package strong {
+  color: #ffffff;
 }
 
 /* CTA */
@@ -1344,6 +1360,7 @@ footer ul li :hover {
   }
 
 }
+
 /* =========================================
    LAHORE SEO LANDING PAGE
 ========================================= */
@@ -1451,7 +1468,7 @@ footer ul li :hover {
 .growth-line {
   height: 1px;
   flex: 1;
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
   margin: 0 9px;
 }
 
@@ -1462,8 +1479,8 @@ footer ul li :hover {
 }
 
 .mini-card {
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   padding: 16px;
   border-radius: 14px;
 }
@@ -1482,7 +1499,7 @@ footer ul li :hover {
 .growth-graph {
   margin-top: 22px;
   padding-top: 20px;
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .graph-label {
@@ -1501,11 +1518,9 @@ footer ul li :hover {
 .graph-bars span {
   flex: 1;
   border-radius: 8px 8px 3px 3px;
-  background: linear-gradient(
-    to top,
-    #2868f0,
-    #74a0ff
-  );
+  background: linear-gradient(to top,
+      #2868f0,
+      #74a0ff);
 }
 
 
@@ -1554,7 +1569,7 @@ footer ul li :hover {
   margin-bottom: 45px;
 }
 
-.section-heading-row > p {
+.section-heading-row>p {
   line-height: 1.7;
   opacity: 0.7;
 }
@@ -1709,7 +1724,7 @@ footer ul li :hover {
   height: 190px;
   margin: 20px auto;
   border-radius: 50%;
-  border: 1px solid rgba(255,255,255,0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   display: grid;
   place-content: center;
   text-align: center;
@@ -1745,7 +1760,7 @@ footer ul li :hover {
 .local-list span {
   padding: 8px 12px;
   border-radius: 100px;
-  border: 1px solid rgba(255,255,255,0.14);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   font-size: 11px;
   opacity: 0.8;
 }
@@ -1782,7 +1797,9 @@ footer ul li :hover {
 }
 
 @keyframes seoPanelFloat {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
 
