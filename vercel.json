@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/social-media-marketing-lahore",
+      "destination": "/social-media-marketing-lahore.html"
+    }
+  ]
+}
