@@ -33,3 +33,43 @@ packageButtons.forEach(button => {
             `https://wa.me/923294030695?text=${encodeURIComponent(message)}`;
     });
 });
+const mobileNavItems = document.querySelectorAll(".mobile-nav-item");
+
+const mobileSections = [
+    document.querySelector("#home"),
+    document.querySelector("#services"),
+    document.querySelector("#work"),
+    document.querySelector("#contact")
+].filter(Boolean);
+
+const mobileObserver = new IntersectionObserver(
+    entries => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                mobileNavItems.forEach(item =>
+                    item.classList.remove("active")
+                );
+
+                const activeItem = document.querySelector(
+                    `.mobile-nav-item[href="#${entry.target.id}"]`
+                );
+
+                if (activeItem) {
+                    activeItem.classList.add("active");
+                }
+            }
+
+        });
+
+    },
+    {
+        rootMargin: "-35% 0px -55% 0px"
+    }
+);
+
+mobileSections.forEach(section =>
+    mobileObserver.observe(section)
+);
